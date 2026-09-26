@@ -10,7 +10,7 @@ export default function AdminGate({ children }) {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
 
-    const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+    const apiUrl = import.meta.env.VITE_API_URL || "https://niwali-backend-production.up.railway.app/api";
 
     // Check session on mount via backend cookie verification
     useEffect(() => {
