@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Trash2 } from "lucide-react";
 import { useCart } from "../context/cartContext";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+const API_URL = import.meta.env.VITE_API_URL || "https://niwali-backend-production.up.railway.app/api";
 
 // Helper to safely check URL schemes
 const imagepathStringCheck = (path) => {

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/cartContext";
 
 const PLACEHOLDER_IMAGE = "https://placehold.co/300x400?text=No+Image";
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+const API_URL = import.meta.env.VITE_API_URL || "https://niwali-backend-production.up.railway.app/api";
 
 const getImageUrl = (imagePath) => {
     if (!imagePath) return PLACEHOLDER_IMAGE;

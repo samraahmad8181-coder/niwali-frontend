@@ -120,7 +120,7 @@ export default function AddProductForm({ onBack }) {
                 benefits: formData.benefits
             };
 
-            const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+            const apiUrl = import.meta.env.VITE_API_URL || "https://niwali-backend-production.up.railway.app/api";
 
 
             const response = await fetch(`${apiUrl}/products`, {

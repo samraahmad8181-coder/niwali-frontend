@@ -1,7 +1,7 @@
 import { X, Image as ImageIcon } from "lucide-react";
 
 export default function ProductDetailForm({ product, onBack }) {
-    const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+    const apiUrl = import.meta.env.VITE_API_URL || "https://niwali-backend-production.up.railway.app/api";
 
     if (!product) return null;
 

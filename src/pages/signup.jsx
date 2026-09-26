@@ -39,7 +39,7 @@ export default function Signup() {
 
         setLoading(true);
         try {
-            const API_URL = import.meta.env.VITE_API_URL || "/api";
+            const API_URL = import.meta.env.VITE_API_URL || "https://niwali-backend-production.up.railway.app/api";
             const endpoint = `${API_URL}/auth/signup`;
 
             const payload = {

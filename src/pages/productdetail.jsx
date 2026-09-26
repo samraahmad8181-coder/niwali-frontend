@@ -5,7 +5,7 @@ import { useCart } from "../context/cartContext";
 import AddToCart from "./addToCart";
 
 const PLACEHOLDER_IMAGE = "https://placehold.co/400x500?text=No+Image";
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+const API_URL = import.meta.env.VITE_API_URL || "https://niwali-backend-production.up.railway.app/api";
 
 const getImageUrl = (imagePath) => {
     if (!imagePath) return "";

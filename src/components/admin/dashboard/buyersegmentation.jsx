@@ -3,7 +3,7 @@ import { ChevronDown } from "lucide-react";
 import { Map, MapGeoJSON, MapMarker, MarkerContent, MapControls } from "@/components/ui/map";
 
 export default function BuyerSegmentation() {
-    const API = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+    const API = import.meta.env.VITE_API_URL || "https://niwali-backend-production.up.railway.app/api";
     const token = localStorage.getItem("adminToken") || localStorage.getItem("token");
 
     const [world, setWorld] = useState(null);

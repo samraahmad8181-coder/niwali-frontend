@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 export default function LatestOrders() {
-    const API = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+    const API = import.meta.env.VITE_API_URL || "https://niwali-backend-production.up.railway.app/api";
     const token = localStorage.getItem("adminToken") || localStorage.getItem("token");
     const [period, setPeriod] = useState("today");
     const [orders, setOrders] = useState([]);

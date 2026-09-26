@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { X, Image as ImageIcon, Upload } from "lucide-react";
 
 export default function ProductEdit({ product, onBack, onSuccess }) {
-    const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+    const apiUrl = import.meta.env.VITE_API_URL || "https://niwali-backend-production.up.railway.app/api";
 
     // Removes an entry from thumbnails if it duplicates the main image
     const stripDuplicateMain = (thumbs, main) =>

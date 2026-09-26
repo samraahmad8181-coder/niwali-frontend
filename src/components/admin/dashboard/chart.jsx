@@ -10,7 +10,7 @@ import {
 } from "recharts";
 
 export default function BarChart() {
-    const API = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+    const API = import.meta.env.VITE_API_URL || "https://niwali-backend-production.up.railway.app/api";
     const token = localStorage.getItem("adminToken") || localStorage.getItem("token");
     const [data, setData] = useState([]);
 

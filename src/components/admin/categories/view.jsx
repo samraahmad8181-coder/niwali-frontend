@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Image as ImageIcon } from "lucide-react";
 
 export default function CategoryDetailForm({ category, onBack }) {
-    const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+    const apiUrl = import.meta.env.VITE_API_URL || "https://niwali-backend-production.up.railway.app/api";
 
     const getInitialImage = () => {
         const img = category?.image || category?.icon || "";

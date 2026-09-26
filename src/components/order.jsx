@@ -100,7 +100,7 @@ function Order() {
                 })),
             };
 
-            const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+            const API_URL = import.meta.env.VITE_API_URL || "https://niwali-backend-production.up.railway.app/api";
 
             const res = await fetch(
                 `${API_URL}/orders/`,
@@ -410,8 +410,8 @@ function Order() {
                             onClick={handleSubmit}
                             disabled={loading}
                             className={`w-full rounded-md py-4 text-white font-medium ${loading
-                                    ? "bg-gray-400 cursor-not-allowed"
-                                    : "bg-green-600 hover:bg-green-700"
+                                ? "bg-gray-400 cursor-not-allowed"
+                                : "bg-green-600 hover:bg-green-700"
                                 }`}
                         >
                             {loading ? "Placing Order..." : "Pay Now"}

@@ -24,7 +24,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 // Safe API URL fallback check
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+const API_URL = import.meta.env.VITE_API_URL || "https://niwali-backend-production.up.railway.app/api";
 
 const STATUS_STEPS = ["Pending", "Processing", "Shipped", "Delivered"];
 
