@@ -3,7 +3,9 @@ import { User, Mail, Lock, LogOut, Trash2, Save, X, Camera } from "lucide-react"
 import { useNavigate } from "react-router-dom";
 import { useUser } from "@/context/userContext";
 
-const API_URL = `${import.meta.env.VITE_API_URL}/auth`;
+const API_URL = import.meta.env.VITE_API_URL
+    ? `${import.meta.env.VITE_API_URL}/auth`
+    : "https://niwali-backend-production.up.railway.app/api/auth";
 
 export default function Settings() {
     const navigate = useNavigate();
