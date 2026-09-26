@@ -41,7 +41,10 @@ export default function Settings() {
             return ""; // Prevents broken local filesystem paths from crashing browser requests
         }
 
-        const base = import.meta.env.VITE_API_URL.replace(/\/api$/, "");
+        const base = (
+            import.meta.env.VITE_API_URL ||
+            "https://niwali-backend-production.up.railway.app/api"
+        ).replace(/\/api$/, "");
         const cleanPath = imagePath.startsWith("/") ? imagePath : `/${imagePath}`;
         return `${base}${cleanPath}`;
     };
