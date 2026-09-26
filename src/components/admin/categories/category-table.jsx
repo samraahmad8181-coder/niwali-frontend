@@ -29,7 +29,7 @@ import CategoryDetailForm from "./view";
 import CategoryEdit from "./edit";
 
 export default function CategoryListTable() {
-    const apiUrl = import.meta.env.VITE_API_URL || "";
+    const apiUrl = import.meta.env.VITE_API_URL;
 
     const [view, setView] = useState("list");
     const [showDetail, setShowDetail] = useState(false);
@@ -418,8 +418,8 @@ export default function CategoryListTable() {
                                 key={page}
                                 onClick={() => setCurrentPage(page)}
                                 className={`h-8 w-8 rounded-md text-sm font-medium transition ${safeCurrentPage === page
-                                        ? "bg-green-600 text-white"
-                                        : "text-gray-600 hover:bg-green-50 hover:text-green-600"
+                                    ? "bg-green-600 text-white"
+                                    : "text-gray-600 hover:bg-green-50 hover:text-green-600"
                                     }`}
                             >
                                 {page}
