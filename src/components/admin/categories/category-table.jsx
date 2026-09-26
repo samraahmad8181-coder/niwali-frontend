@@ -29,7 +29,7 @@ import CategoryDetailForm from "./view";
 import CategoryEdit from "./edit";
 
 export default function CategoryListTable() {
-    const apiUrl = import.meta.env.VITE_API_URL;
+    const apiUrl = import.meta.env.VITE_API_URL || "https://niwali-backend-production.up.railway.app/api";
 
     const [view, setView] = useState("list");
     const [showDetail, setShowDetail] = useState(false);

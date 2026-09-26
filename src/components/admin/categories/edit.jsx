@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { ArrowLeft, Upload, Image as ImageIcon } from "lucide-react";
 
 export default function CategoryEdit({ category, onBack, onSuccess }) {
-    const apiUrl = import.meta.env.VITE_API_URL;
+    const apiUrl = import.meta.env.VITE_API_URL || "https://niwali-backend-production.up.railway.app/api";
 
     const [formData, setFormData] = useState({
         name: category?.name || category?.title || "",
