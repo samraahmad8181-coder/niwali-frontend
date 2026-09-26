@@ -32,7 +32,7 @@ import ProductEdit from "./editProduct";
 
 export default function ProductListTable() {
 
-    const apiUrl = import.meta.env.VITE_API_URL || "";
+    const apiUrl = import.meta.env.VITE_API_URL || "https://niwali-backend-production.up.railway.app/api";
 
     const getImageUrl = (imagePath) => {
         if (!imagePath) return "";
