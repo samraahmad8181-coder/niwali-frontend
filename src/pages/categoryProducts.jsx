@@ -7,7 +7,7 @@ export default function CategoryProducts() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    const apiUrl = import.meta.env.VITE_API_URL;
+    const apiUrl = import.meta.env.VITE_API_URL || "https://niwali-backend-production.up.railway.app/api";
 
     // Scroll to the top of the page when the component mounts
     useEffect(() => {
